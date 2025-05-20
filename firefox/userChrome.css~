@@ -1,0 +1,40 @@
+#TabsToolbar,
+#nav-bar,
+#PersonalToolbar,
+#titlebar,
+#sidebar-header,
+#urlbar-container,
+#search-container {
+  visibility: collapse !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#urlbar {
+  opacity: 0.3 !important;
+  transition: opacity 0.2s !important;
+  min-height: 0 !important;
+  max-height: 22px !important;
+}
+#urlbar:hover,
+#urlbar:focus {
+  opacity: 1 !important;
+}
+.tabbrowser-tab {
+  display: none !important;
+}
+#star-button {
+  display: none !important;
+}
+#PanelUI-menu-button {
+  display: none !important;
+}
+#searchbar {
+  display: none !important;
+}
+#statuspanel {
+  display: none !important;
+}
+:root {
+  scrollbar-width: none !important;
+}

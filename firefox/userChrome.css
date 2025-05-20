@@ -1,12 +1,34 @@
 #TabsToolbar,
-#nav-bar,
 #PersonalToolbar,
 #titlebar,
 #sidebar-header,
-#urlbar-container,
-#search-container {
+#search-container,
+.tabbrowser-tab,
+#star-button,
+#PanelUI-menu-button,
+#searchbar,
+#statuspanel {
   visibility: collapse !important;
   height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#nav-bar {
+  visibility: visible !important;
+  height: auto !important;
+}
+#back-button,
+#forward-button,
+#reload-button,
+#home-button,
+#stop-button,
+#downloads-button,
+#fxa-toolbar-menu-button {
+  display: none !important;
+}
+#urlbar-container {
+  visibility: visible !important;
+  height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -15,24 +37,15 @@
   transition: opacity 0.2s !important;
   min-height: 0 !important;
   max-height: 22px !important;
+  width: 100% !important; 
 }
 #urlbar:hover,
 #urlbar:focus {
   opacity: 1 !important;
 }
-.tabbrowser-tab {
-  display: none !important;
-}
-#star-button {
-  display: none !important;
-}
-#PanelUI-menu-button {
-  display: none !important;
-}
-#searchbar {
-  display: none !important;
-}
-#statuspanel {
+#urlbar-results,
+#urlbar-dropmarker,
+.urlbarView {
   display: none !important;
 }
 :root {
