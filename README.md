@@ -1,1 +1,1 @@
-# best configs out there
+# insane configs
