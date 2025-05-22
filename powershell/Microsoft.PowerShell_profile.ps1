@@ -3,6 +3,8 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\gruvbox.omp.json" | Invoke-
 function cd... 		{ cd ..\.. }
 function cd.... 	{ cd ..\..\.. }
 function n 		{ notepad $args }
+function inv { Invoke-Item $args }
+function f { Start-Process Firefox }
 function dirs 
 {
 	if ($args.Count -gt 0)
