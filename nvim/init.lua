@@ -1,4 +1,2 @@
--- ~/.config/nvim/init.lua
-local home = os.getenv("HOME") or os.getenv("USERPROFILE")
-package.path = package.path .. ";" .. home .. "\\.config\\nvim\\lua\\?.lua"
-require('config.keymaps')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
