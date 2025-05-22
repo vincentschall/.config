@@ -3,4 +3,4 @@ currently includes:
   - powershell
   - firefox
   - neovim
-  -scoop
+  - scoop
