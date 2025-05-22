@@ -1,5 +1,6 @@
 # insane configs
 currently includes:
-    - powershell
-    - firefox
-    - neovim
+  - powershell
+  - firefox
+  - neovim
+  -scoop
