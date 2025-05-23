@@ -5,17 +5,6 @@ function cd.... 	{ cd ..\..\.. }
 function n 		{ notepad $args }
 function inv { Invoke-Item $args }
 function f { Start-Process Firefox }
-function dirs 
-{
-	if ($args.Count -gt 0)
-	{
-		Get-Children -Recurse -Include "$args" | Foreach-Object FullName
-	}
-	else
-	{
-		Get-Children -Recurse | Foreach-Object FullName
-	}
-}
 function admin
 {
 	if ($args.Count -gt 0)
@@ -52,12 +41,6 @@ function find-file($name)
 		$place_path = $_.directory
 		echo "${place_path}\${_}"
 	}
-}
-function unzip($file)
-{
-	echo("Extracting", $file, "to", $pwd)
-	$fullFile = Get-ChildItem -Path $pwd -Filter .\cove.zip | ForEachObject{$_.FullName}
-	Expand-Archive -Path $fullFile -DestinationPath $pwd
 }
 function grep($regex, $dir)
 {
