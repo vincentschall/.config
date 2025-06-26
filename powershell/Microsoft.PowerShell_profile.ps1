@@ -20,7 +20,7 @@ function admin
 }
 Set-Alias -Name su -Value admin
 Set-Alias -Name sudo -Value admin
-function uni { cd $HOME\Documents\Uni }
+function uni { cd $HOME\Documents\Uni\2025_HS }
 function gcom 
 {
 	git add .
