@@ -64,3 +64,4 @@ function pgrep($name)
 {
 	ps $name
 }
+function usb { cd 'D:' }
