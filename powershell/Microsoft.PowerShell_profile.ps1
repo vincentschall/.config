@@ -10,6 +10,10 @@ function find-file($name)
 		echo "${place_path}\${_}"
 	}
 }
+function t
+{
+	git add . && git commit -m "task" && git push
+}
 function grep($regex, $dir)
 {
 	if ( $dir) 
