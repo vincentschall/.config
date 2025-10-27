@@ -12,7 +12,6 @@ function t
 {
 git add . && git commit -m "task" && git push
 }
-function usb { cd 'D:' }
 function movd { Move-Item ~/Downloads/* . }
 function :g {
 	$url = git remote get-url origin 2>$null
